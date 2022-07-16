@@ -1,0 +1,50 @@
+.card{
+    display: block;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #404040;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+}
+.card header{
+    font-size: 1.1rem;
+}
+button{
+    cursor: pointer;
+}
+
+/* ここから */
+.modalWrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 110vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    overscroll-behavior: contain;
+    overflow-y: scroll;
+}
+.modal {
+    top: 10px;
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 15px;
+}
+.modal header {
+    background-color: rgba(22, 104, 255, 0.8);
+}
+.nonScroll{
+    height:calc(100% + 2px) ;
+    width: 1px;
+    background-color: #212121;
+}
+.none{
+    display: none;
+}
